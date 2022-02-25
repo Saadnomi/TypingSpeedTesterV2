@@ -3,22 +3,31 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <><header class="masthead">
+      <h1>Test Your Typing Speed</h1>
+    </header><main class="main">
+        <article class="intro">
+          <p>This is a typing test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The timer starts when you start typing, and only stops when you match this text exactly. Good Luck!</p>
+        </article>
+        <section class="test-area">
+          <div id="origin-text">
+            <p>The text to test.</p>
+          </div>
+
+          <div class="test-wrapper">
+            <textarea id="test-area" name="textarea" rows="6" placeholder="The clock starts when you start typing."></textarea>
+          </div>
+
+          <div class="meta">
+            <section id="clock">
+              <div class="timer">00:00:00</div>
+            </section>
+
+            <button id="reset">Start over</button>
+          </div>
+        </section>
+      </main></>
+
   );
 }
 
