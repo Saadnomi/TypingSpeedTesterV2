@@ -1,9 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import ScriptTag from 'react-script-tag';
+
+
+
 
 function App() {
   return (
+
     <><header class="masthead">
+          <ScriptTag isHydrating={true} type="text/javascript" 
+      src=
+"script.js" />
       <h1>Test Your Typing Speed</h1>
     </header><main class="main">
         <article class="intro">
